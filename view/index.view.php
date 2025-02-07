@@ -13,12 +13,12 @@
     
     <div class="container">
     <div class="d-flex justify-content-end my-5">
-        <a href="insert.view.php" class="btn btn-primary">Add Data </a>
+        <a href="../../CRUD Oparation/view/insert.view.php" class="btn btn-primary">Add Data</a>
     </div>
         <div class="row">
             <div class="col-12">
                 <table class="table table-dark">
-                    <thead>
+                    <thead class="text-center">
                         <tr>
                             <th scope="col">SL</th>
                             <th scope="col">Name</th>
@@ -29,15 +29,15 @@
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="text-center">
                        <?php foreach($showData as $key => $value): ?>
                        <tr>
                            <td scope="col"><?= $key + 1 ?></td>
                            <td scope="col"><?= $value['name']?></td>
                            <td scope="col"><?= $value['email']?></td>
-                           <td scope="col"><?= $value['status']?></td>
-                           <td scope="col"><?= $value['created_at']?></td>
-                           <td scope="col"><?= $value['updated_at']?></td>  
+                           <td scope="col"><?= $value['status'] == 1 ? "Active" : "Inactive" ?></td>
+                           <td scope="col"><?= date('d M, Y h:i:s A', strtotime($value['created_at']))?></td>
+                           <td scope="col"><?= $value['updated_at'] ? date('d M, Y h:i:s A', strtotime($value['updated_at'])) :'Null' ?></td>  
                            <td scope="col">
                             <a href="" class="btn btn-primary">Edit</a>
                             <a href="" class="btn btn-danger">Delete</a>
