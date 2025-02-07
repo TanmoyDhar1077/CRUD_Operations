@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <h1 class="text-center">Database</h1>
+    <h1 class="text-center">Student Data</h1>
     
     <div class="container">
     <div class="d-flex justify-content-end my-5">
-        <a href="../../CRUD Oparation/view/insert.view.php" class="btn btn-primary">Add Data</a>
+        <a href="insert.php" class="btn btn-primary">Add Data</a>
     </div>
         <div class="row">
             <div class="col-12">
@@ -37,8 +37,9 @@
                            <td scope="col"><?= $value['email']?></td>
                            <td scope="col"><?= $value['status'] == 1 ? "Active" : "Inactive" ?></td>
                            <td scope="col"><?= date('d M, Y h:i:s A', strtotime($value['created_at']))?></td>
-                           <td scope="col"><?= $value['updated_at'] ? date('d M, Y h:i:s A', strtotime($value['updated_at'])) :'Null' ?></td>  
+                           <td scope="col"><?= $value['updated_at'] ? date('d M, Y h:i:s A', strtotime($value['updated_at'])) :'NULL' ?></td>  
                            <td scope="col">
+                           <a href="" class="btn btn-success">Active</a>
                             <a href="" class="btn btn-primary">Edit</a>
                             <a href="" class="btn btn-danger">Delete</a>
                            </td>                                 
