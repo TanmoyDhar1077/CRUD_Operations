@@ -2,7 +2,10 @@
 
 
 if(isset($_GET['id'])){
+    
     $id = $_GET['id'];
+
+
     $sql = "SELECT * FROM students WHERE id = $id";
     // Include: the database connection
     require_once('database.php');
@@ -18,6 +21,7 @@ if(isset($_GET['id'])){
 }
 
 if (isset($_POST['submit'])) {
+
     $name = $_POST['name'];
     $email = $_POST['email'];;
 

@@ -39,7 +39,7 @@
                            <td scope="col"><?= date('d M, Y h:i:s A', strtotime($value['created_at']))?></td>
                            <td scope="col"><?= $value['updated_at'] ? date('d M, Y h:i:s A', strtotime($value['updated_at'])) :'NULL' ?></td>  
                            <td scope="col">
-                           <a href="" class="btn btn-success">Active</a>
+                           <a href="status.php?id=<?= $value['id']?>" class="btn <?= $value['status'] == 1 ? "btn-warning" : "btn-success" ?>"><?= $value['status'] == 1 ? "Inactive" : "Active" ?></a>
                             <a href="edit.php?id=<?= $value['id']?>" class="btn btn-primary">Edit</a>
                             <a href="delete.php?id=<?= $value['id']?>" class="btn btn-danger">Delete</a>
                            </td>                                 

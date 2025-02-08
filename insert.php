@@ -9,6 +9,7 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO students (name, email) VALUES ('$name', '$email')";
     // Include: the database connection
     require_once('database.php');
+    
     $result = $conn->query($sql);
     if (!$result) {
         echo "scritp>alert('Data Inserted Failed');</script>";
