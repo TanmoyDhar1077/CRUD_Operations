@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Database</title>
+    <title>Student Data</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
@@ -40,7 +40,7 @@
                            <td scope="col"><?= $value['updated_at'] ? date('d M, Y h:i:s A', strtotime($value['updated_at'])) :'NULL' ?></td>  
                            <td scope="col">
                            <a href="" class="btn btn-success">Active</a>
-                            <a href="" class="btn btn-primary">Edit</a>
+                            <a href="edit.php?id=<?= $value['id']?>" class="btn btn-primary">Edit</a>
                             <a href="" class="btn btn-danger">Delete</a>
                            </td>                                 
                        </tr>
