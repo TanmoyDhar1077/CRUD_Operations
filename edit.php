@@ -19,7 +19,7 @@ if(isset($_GET['id'])){
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
-    $email = $_POST['email'];
+    $email = $_POST['email'];;
 
 
     $sql = "UPDATE students SET name ='$name', email='$email' WHERE id = $id";

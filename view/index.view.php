@@ -41,7 +41,7 @@
                            <td scope="col">
                            <a href="" class="btn btn-success">Active</a>
                             <a href="edit.php?id=<?= $value['id']?>" class="btn btn-primary">Edit</a>
-                            <a href="" class="btn btn-danger">Delete</a>
+                            <a href="delete.php?id=<?= $value['id']?>" class="btn btn-danger">Delete</a>
                            </td>                                 
                        </tr>
                        <?php endforeach; ?>
