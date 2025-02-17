@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     
     $result = $conn->query($sql);
     if (!$result) {
-        echo "scritp>alert('Data Inserted Failed');</script>";
+        echo "<scritp>alert('Data Inserted Failed');</script>";
     } else {
         header('Location: index.php');
     }
