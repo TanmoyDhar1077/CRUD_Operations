@@ -22,6 +22,8 @@
                         <tr>
                             <th scope="col">SL</th>
                             <th scope="col">Name</th>
+                            <th scope="col">Roll</th>
+                            <th scope="col">Registation</th>
                             <th scope="col">Email</th>
                             <th scope="col">Status</th>
                             <th scope="col">Created Time</th>
@@ -34,6 +36,8 @@
                        <tr>
                            <td scope="col"><?= $key + 1 ?></td>
                            <td scope="col"><?= $value['name']?></td>
+                           <td scope="col"><?= $value['roll']?></td>
+                           <td scope="col"><?= $value['registration']?></td>
                            <td scope="col"><?= $value['email']?></td>
                            <td scope="col"><?= $value['status'] == 1 ? "Active" : "Inactive" ?></td>
                            <td scope="col"><?= date('d M, Y h:i:s A', strtotime($value['created_at']))?></td>

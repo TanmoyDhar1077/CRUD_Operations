@@ -23,6 +23,14 @@
                         <input type="text" value="<?= $editData['name']?>" class="form-control" name="name" placeholder="Enter Name" required>
                     </div>
                     <div class="mb-3">
+                        <label class="form-label">Roll:</label>
+                        <input type="number" value="<?= $editData['roll']?>" class="form-control" name="roll" placeholder="Enter Roll" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Registration Number:</label>
+                        <input type="number" value="<?= $editData['registration']?>" class="form-control" name="registration" placeholder="Enter Registration Number" required>
+                    </div>
+                    <div class="mb-3">
                         <label class="form-label">Email:</label>
                         <input type="email" value="<?= $editData['email']?>" class="form-control" name="email" placeholder="Enter Email" required>
                     </div>

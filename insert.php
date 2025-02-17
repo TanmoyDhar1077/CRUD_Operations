@@ -4,9 +4,11 @@
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $roll = $_POST['roll'];
+    $registration = $_POST['registration'];
 
 
-    $sql = "INSERT INTO students (name, email) VALUES ('$name', '$email')";
+    $sql = "INSERT INTO students (name, email, roll, registration) VALUES ('$name', '$email', '$roll', '$registration')";
     // Include: the database connection
     require_once('database.php');
     
